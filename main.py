@@ -7,6 +7,16 @@ db = init_db()
 
 # .-=+=-* Authentication before showing main menu *-=+=-.
 def authenticate():
+    """
+    Handle user authentication at the start of the application.
+
+    Prompts the user to choose between login and registration, then
+    performs the corresponding action using Firebase Authentication.
+
+    Returns:
+        str: The 'localId' of the logged-in user if authentication succeeds.
+        None: If authentication fails or the user chooses an invalid option.
+    """
     print("\n.-=+=-* Notes App *-=+=-.")
     print("Welcome! Choose an option:")
     print("1. Login")
@@ -29,6 +39,22 @@ def authenticate():
 
 #  CLI Menu *-=+=-.
 def main_menu(user_id):
+    """
+    Display the main CLI menu for the Notes App and handle user input.
+
+    The menu allows the logged-in user to:
+        1. Add a new note
+        2. View all notes
+        3. Update an existing note
+        4. Delete a note
+        5. Exit the application
+
+    Args:
+        user_id (str): The Firebase Authentication user ID for the current session.
+
+    Returns:
+        None
+    """
     while True:
         print("\n.-=+=-* Notes App Menu *-=+=-.")
         print("1. Add Note")

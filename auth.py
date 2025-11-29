@@ -18,6 +18,17 @@ firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 
 def register_user():
+    """
+    Register a new user with email and password using Firebase Authentication.
+
+    Prompts the user to input:
+        - Email
+        - Password
+
+    Returns:
+        dict: A dictionary containing user information if registration is successful.
+        None: If registration fails.
+    """
     email = input("Enter email: ")
     password = input("Enter password: ")
     try:
@@ -29,6 +40,17 @@ def register_user():
         return None
 
 def login_user():
+    """
+    Log in an existing user with email and password using Firebase Authentication.
+
+    Prompts the user to input:
+        - Email
+        - Password
+
+    Returns:
+        dict: A dictionary containing user information if login is successful.
+        None: If login fails.
+    """
     email = input("Enter email: ")
     password = input("Enter password: ")
     try:
