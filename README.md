@@ -33,7 +33,6 @@ This structure allows each user to have isolated notes and supports real-time up
 {Make a list of websites that you found helpful in this project}
 
 - [Firebase Documentation](https://firebase.google.com/docs/firestore/quickstart)
-- [Firebase Documentation](https://firebase.google.com/docs/auth/where-to-start)
 - [Pyrebase Documentation](https://github.com/thisbejim/Pyrebase)
 - [Python Documentation](https://docs.python.org/3/)
 
